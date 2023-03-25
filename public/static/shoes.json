@@ -1,0 +1,37 @@
+[
+  {
+    "id": "94313731",
+    "name": "Tênis Nike Revolution 5 Max",
+    "price": 249.99,
+    "oldPrice": 349.99,
+    "image": "https://imgcentauro-a.akamaihd.net/230x230/94313731.jpg"
+  },
+  {
+    "id": "94313762",
+    "name": "Tênis Nike Revolution 5",
+    "price": 249.99,
+    "oldPrice": 349.99,
+    "image": "https://imgcentauro-a.akamaihd.net/230x230/94313762.jpg"
+  },
+  {
+    "id": "943137XQ",
+    "name": "Tênis Nike Revolution 5",
+    "price": 249.99,
+    "oldPrice": 349.99,
+    "image": "https://imgcentauro-a.akamaihd.net/230x230/943137XQ.jpg"
+  },
+  {
+    "id": "95077714",
+    "name": "Tênis Asics Patriot 12 Noosa",
+    "price": 199.99,
+    "oldPrice": 279.99,
+    "image": "https://imgcentauro-a.akamaihd.net/230x230/95077714.jpg"
+  },
+  {
+    "id": "9507779N",
+    "name": "Tênis Asics Patriot 12 Noosa",
+    "price": 199.99,
+    "oldPrice": 279.99,
+    "image": "https://imgcentauro-a.akamaihd.net/230x230/9507779N.jpg"
+  }
+]
