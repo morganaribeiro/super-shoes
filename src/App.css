@@ -118,3 +118,8 @@ body {
   transform: rotate(-45deg);
   margin-right: 3px;
 }
+
+.arrow.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
