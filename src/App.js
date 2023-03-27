@@ -12,10 +12,15 @@ function App() {
       .then(setData);
   }, []);
 
+  useEffect(() => {
+    console.log(currentIndex); // 0, 1, 2, 3, 4 
+    console.log(data.length); // 5 itens
+  }, [currentIndex, data.length]);
+
   const handleLeftClick = (e) => {
     e.preventDefault();
     if (currentIndex > 0) {
-      setCurrentIndex(currentIndex - 1);
+      setCurrentIndex(prevCurrentIndex => prevCurrentIndex - 1);
       carousel.current.scrollLeft -= carousel.current.offsetWidth;
     }
   };
@@ -23,7 +28,7 @@ function App() {
   const handleRightClick = (e) => {
     e.preventDefault();
     if (currentIndex < data.length - 1) {
-      setCurrentIndex(currentIndex + 1);
+      setCurrentIndex(prevCurrentIndex => prevCurrentIndex + 1);
       carousel.current.scrollLeft += carousel.current.offsetWidth;
     }
   };
