@@ -1,17 +1,17 @@
-  .toggle-tab {
+.toggle-tab {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .toggle-tab__list {
+}
+
+.toggle-tab__list {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .toggle-tab__item {
+}
+
+.toggle-tab__item {
     display: flex;
     justify-content: center;
     cursor: pointer;
@@ -20,28 +20,30 @@
     border: 1px solid transparent;
     width: 130px;
     font-weight: 600;
-  }
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
 
-  .toggle-tab__item:first-child {
+/* define a opacidade das tabs desativadas quando o cursor é passado sobre elas */
+.toggle-tab__item:not(.toggle-tab__item--active):hover {
+    opacity: 0.5; /* efeito de transição suave */
+}
+
+.toggle-tab__item:first-child {
     border-top-left-radius: 10px;
-  }
+}
 
-  .toggle-tab__item:last-child {
+.toggle-tab__item:last-child {
     border-top-right-radius: 10px;
-  }
-  
-  .toggle-tab__item--active {
-    color: white;
-    background-color: #B41E13;
-  }
+}
 
-  /* .toggle-tab__item:hover {
-    color: #ccc;
-  } */
-  
-  .toggle-tab__content {
+.toggle-tab__item--active {
+    color: white;
+    background-color: #b41e13;
+}
+
+.toggle-tab__content {
     padding: 2rem;
-    background: #B41E13;
+    background: #b41e13;
     border-radius: 10px;
-  }
-  
+}

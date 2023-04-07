@@ -10,64 +10,46 @@ function App() {
   const tabs = [
     {
       id: 1,
-      label: 'Tab 1',
+      label: 'Ofertas TV',
       content: [
         {
-          imageUrl: 'https://via.placeholder.com/150x150',
-          title: 'Card 1',
-          description: 'Descrição do Card 1',
+          imageUrl: "https://via.placeholder.com/200x250"
         },
         {
-          imageUrl: 'https://via.placeholder.com/150x150',
-          title: 'Card 2',
-          description: 'Descrição do Card 2',
+          imageUrl: "https://via.placeholder.com/200x250"
         },
         {
-          imageUrl: 'https://via.placeholder.com/150x150',
-          title: 'Card 3',
-          description: 'Descrição do Card 3',
+          imageUrl: "https://via.placeholder.com/200x250"
         },
       ],
     },
     {
       id: 2,
-      label: 'Tab 2',
+      label: 'Ofertas Móvel',
       content: [
         {
-          imageUrl: 'https://via.placeholder.com/150x150',
-          title: 'Card 4',
-          description: 'Descrição do Card 4',
+          imageUrl: "https://via.placeholder.com/200x250"
         },
         {
-          imageUrl: 'https://via.placeholder.com/150x150',
-          title: 'Card 5',
-          description: 'Descrição do Card 5',
+          imageUrl: "https://via.placeholder.com/200x250"
         },
         {
-          imageUrl: 'https://via.placeholder.com/150x150',
-          title: 'Card 6',
-          description: 'Descrição do Card 6',
+          imageUrl: "https://via.placeholder.com/200x250"
         },
       ],
     },
     {
       id: 3,
-      label: 'Tab 3',
+      label: 'Ofertas Fixo',
       content: [
         {
-          imageUrl: 'https://via.placeholder.com/150x150',
-          title: 'Card 7',
-          description: 'Descrição do Card 7',
+          imageUrl: "https://via.placeholder.com/200x250"
         },
         {
-          imageUrl: 'https://via.placeholder.com/150x150',
-          title: 'Card 8',
-          description: 'Descrição do Card 8',
+          imageUrl: "https://via.placeholder.com/200x250"
         },
         {
-          imageUrl: 'https://via.placeholder.com/150x150',
-          title: 'Card 9',
-          description: 'Descrição do Card 9',
+          imageUrl: "https://via.placeholder.com/200x250"
         },
       ],
     },
@@ -104,7 +86,7 @@ function App() {
 
   return (
     <>
-      <div className="container">
+      {/* <div className="container">
         <div className="logo">
           <img src="/static/images/super-shoes.png" alt="Super Shoes Logo" />
         </div>
@@ -133,7 +115,7 @@ function App() {
             <div className="arrowRight"></div>
           </button>
         </div>
-      </div>
+      </div> */}
       <div className="toggle-tab-container">
         <ToggleTab tabs={tabs} />
       </div>
