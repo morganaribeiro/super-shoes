@@ -1,37 +1,57 @@
-import { useState } from 'react';
-import ToggleTabPane from '../toggleTabPane/toggleTabPane';
-import './toggleTab.css';
+import ToggleTabItem from "./toggleTabItem/toggleTabItem";
 
-function ToggleTab({ tabs }) {
-    const [activeTab, setActiveTab] = useState(tabs[0].id);
+const tabs = [
+    {
+      id: 1,
+      label: 'Ofertas TV',
+      content: [
+        {
+          imageUrl: "https://via.placeholder.com/200x250"
+        },
+        {
+          imageUrl: "https://via.placeholder.com/200x250"
+        },
+        {
+          imageUrl: "https://via.placeholder.com/200x250"
+        },
+      ],
+    },
+    {
+      id: 2,
+      label: 'Ofertas Móvel',
+      content: [
+        {
+          imageUrl: "https://via.placeholder.com/200x250"
+        },
+        {
+          imageUrl: "https://via.placeholder.com/200x250"
+        },
+        {
+          imageUrl: "https://via.placeholder.com/200x250"
+        },
+      ],
+    },
+    {
+      id: 3,
+      label: 'Ofertas Fixo',
+      content: [
+        {
+          imageUrl: "https://via.placeholder.com/200x250"
+        },
+        {
+          imageUrl: "https://via.placeholder.com/200x250"
+        },
+        {
+          imageUrl: "https://via.placeholder.com/200x250"
+        },
+      ],
+    },
+  ];
 
-    const handleClick = (tabId) => {
-        setActiveTab(tabId);
-    };
-
+export default function ToggleTab() {
     return (
-        <div className="toggle-tab">
-            <ul className="toggle-tab__list">
-                {tabs.map((tab) => (
-                    <li
-                        key={tab.id}
-                        className={`toggle-tab__item ${activeTab === tab.id ? 'toggle-tab__item--active' : ''
-                            }`}
-                        onClick={() => handleClick(tab.id)}
-                    >
-                        {tab.label}
-                    </li>
-                ))}
-            </ul>
-            <div className="toggle-tab__content">
-                {tabs.map((tab) => (
-                    activeTab === tab.id && (
-                        <ToggleTabPane key={tab.id} content={tab.content} />
-                    )
-                ))}
-            </div>
+        <div className="toggle-tab-container">
+            <ToggleTabItem tabs={tabs} />
         </div>
     );
 }
-
-export default ToggleTab;

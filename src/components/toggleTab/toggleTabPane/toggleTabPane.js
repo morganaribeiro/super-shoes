@@ -1,7 +1,7 @@
 import React from 'react';
 import './toggleTabPane.css';
 
-function ToggleTabPane({ content }) {
+export default function ToggleTabPane({ content }) {
   return (
     <div className="toggle-tab__pane toggle-tab__pane--active">
       {content.map((card, index) => (
@@ -14,5 +14,3 @@ function ToggleTabPane({ content }) {
     </div>
   );
 }
-
-export default ToggleTabPane;
